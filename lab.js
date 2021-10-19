@@ -116,12 +116,14 @@ var carDetails = {
 function greeting( obj ) {
   //Code Here
   
+  let {firstName: firstName, lastName: lastName, title: title}
+
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
 }
 
-
+console.log(greeting('Ms', 'Lindsay', 'Senia'))
 
 //////////////////////////// PROBLEM 8 ////////////////////////////
 
