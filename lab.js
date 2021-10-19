@@ -253,12 +253,12 @@ class Wizard{
     this.favoriteSpell = favoriteSpell;
   }
   castSpell(){
-    console.log(`${name} has cast ${favoriteSpell}`)
+    console.log(`${this.name} has cast ${this.favoriteSpell}`)
   }
 }
 
 let wizardOne = new Wizard('Hermione', '18', 'Lumos');
-console.log(wizardOne)
+wizardOne.castSpell()
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
     Write a class called Phone. We'll use it as if we were creating
