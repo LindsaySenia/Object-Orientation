@@ -116,14 +116,13 @@ var carDetails = {
 function greeting( obj ) {
   //Code Here
   
-  let {firstName: firstName, lastName: lastName, title: title}
+  let {title, firstName, lastName} = obj
 
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
 }
 
-console.log(greeting('Ms', 'Lindsay', 'Senia'))
 
 //////////////////////////// PROBLEM 8 ////////////////////////////
 
@@ -137,7 +136,10 @@ console.log(greeting('Ms', 'Lindsay', 'Senia'))
 
 //Code Here
 
-
+function totalPopulation(object){
+  const {Utah, California, Texas, Arizona} = object
+  return Utah + California + Texas + Arizona
+}
 
 //////////////////////////// PROBLEM 9 ////////////////////////////
 
