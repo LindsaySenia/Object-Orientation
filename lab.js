@@ -222,8 +222,19 @@ console.log(separator)
 */
 
 //Code here
+class Cat{
+  constructor(name, color, badKitty){
+  this.name = name
+  this.color = color
+  this.badKitty = badKitty
+}
+}
 
+const catOne = new Cat('Princess', 'Tabby', true)
 
+console.log(catOne.name)
+
+console.log(separator)
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
 /*
