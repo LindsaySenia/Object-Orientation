@@ -1,3 +1,5 @@
+let separator = "----------"
+
 //////////////////////////// PROBLEM 1 ////////////////////////////
 /*
   Create an object called me.
@@ -10,7 +12,6 @@ const me = {
   age: 31
 };
 
-
 //////////////////////////// PROBLEM 2 ////////////////////////////
 
 //Create an object saved to the variable dog.
@@ -20,6 +21,13 @@ const me = {
 
 //Code here
 
+var dog = {
+  name: 'Lexi', 
+  color: 'Brown',
+  age: 13,
+  goodGirl: true
+};
+
 
 
 //////////////////////////// PROBLEM 3 ////////////////////////////
@@ -27,13 +35,18 @@ const me = {
 
 //Code here
 
+console.log("Dog name =>", dog.name)
 
+console.log(separator)
 
 //////////////////////////// PROBLEM 4 ////////////////////////////
 /* Print out the color of the dog you created in problem 2 using bracket-notation. */
 
 //Code here
 
+console.log("Dog color =>", dog['color'])
+
+console.log(separator)
 
 
 //////////////////////////// PROBLEM 5 ////////////////////////////
@@ -43,6 +56,15 @@ const me = {
 */
 
 //Code here
+
+const favoriteThings = {
+  band: 'Run the Jewels',
+  food: 'Pizza',
+  person: 'My daughter',
+  book: 'The Four Agreements',
+  movie: 'Inception',
+  holiday: 'Halloween'
+};
 
 
 /*
