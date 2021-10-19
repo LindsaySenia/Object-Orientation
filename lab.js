@@ -57,7 +57,7 @@ console.log(separator)
 
 //Code here
 
-const favoriteThings = {
+let favoriteThings = {
   band: 'Run the Jewels',
   food: 'Pizza',
   person: 'My daughter',
@@ -76,8 +76,6 @@ const favoriteThings = {
 favoriteThings.car = 'Mitsubishi Spyder'
 favoriteThings['show'] = 'AEW: Dynamite'
 
-console.log(favoriteThings)
-
 
 /*
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
@@ -86,6 +84,8 @@ console.log(favoriteThings)
 
 //Code here
 
+favoriteThings.food = 'Chicken Nuggets'
+favoriteThings.book = 'Harry Potter'
 
 //////////////////////////// PROBLEM 6 ////////////////////////////
 
@@ -103,8 +103,7 @@ var carDetails = {
 */
 
 //Code Here
-
-
+ let {color: carColor, make: carMake, model: carModel, year: carYear} = carDetails
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
 
