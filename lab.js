@@ -113,7 +113,7 @@ var carDetails = {
   The property names are firstName, lastName, and title.
 */
 
-function greeting( obj ) {
+function greeting(obj) {
   //Code Here
   
   let {title, firstName, lastName} = obj
@@ -122,6 +122,15 @@ function greeting( obj ) {
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
 }
+
+// let fullName = {
+//   firstName: "Lindsay",
+//   lastName: "Senia",
+//   title: "Miss"
+// }
+// console.log(greeting(fullName))
+// object created to check function
+
 
 
 //////////////////////////// PROBLEM 8 ////////////////////////////
@@ -137,11 +146,21 @@ function greeting( obj ) {
 //Code Here
 
 function totalPopulation(object){
-  const {Utah, California, Texas, Arizona} = object
-  return Utah + California + Texas + Arizona
+  const {utah, california, texas, arizona} = object
+  return utah + california + texas + arizona
 }
 
+// let statePops = {
+//   utah: 50000,
+//   california: 1000000,
+//   texas: 2000000,
+//   arizona: 100000
+// }
+// console.log(totalPopulation(statePops))
+
+
 //////////////////////////// PROBLEM 9 ////////////////////////////
+
 
 /*
   Write a function called ingredients that will take in an object. 
@@ -152,7 +171,10 @@ function totalPopulation(object){
 */
 
 //Code Here
-
+function ingredients(obj){
+  let {carb, fat, protein} = obj
+  return [carb, fat, protein]
+}
 
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
@@ -175,6 +197,9 @@ var user = {
 
 //Code Here
 
+user.name = 'Bryan G. Smith'
+user.email = 'bryan.smith@devmounta.in'
+
 
 //////////////////////////// PROBLEM 11 ////////////////////////////
 /*
@@ -182,6 +207,11 @@ var user = {
 */
 
 //Code Here
+
+delete user.age
+console.log(user)
+
+console.log(separator)
 
 
 //////////////////////////// PROBLEM 12 ////////////////////////////
