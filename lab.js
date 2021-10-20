@@ -284,6 +284,23 @@ wizardOne.castSpell()
 
 //Code Here
 
+class Phone{
+constructor(brand, model, storage, color, price, sold){
+  this.brand = brand;
+  this.model = model;
+  this.storage = storage;
+  this.color = color;
+  this.price = price;
+  false = sold;
+};
+sell(){
+  sold = true;
+  console.log(`${brand} ${model} has been sold.`)
+};
+changePrice(newPrice){
+  price = newPrice
+};
+};
   
 /*
     Next make three new phone instances using your class.
