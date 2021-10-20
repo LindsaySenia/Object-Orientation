@@ -1,4 +1,9 @@
-let separator = "----------"
+function separator(){
+  let separator = "----------";
+  console.log(separator)
+};
+
+
 
 //////////////////////////// PROBLEM 1 ////////////////////////////
 /*
@@ -35,19 +40,18 @@ var dog = {
 
 //Code here
 
-console.log("Dog name =>", dog.name)
+console.log("Dog name =>", dog.name);
 
-console.log(separator)
+separator()
 
 //////////////////////////// PROBLEM 4 ////////////////////////////
 /* Print out the color of the dog you created in problem 2 using bracket-notation. */
 
 //Code here
 
-console.log("Dog color =>", dog['color'])
+console.log("Dog color =>", dog['color']);
 
-console.log(separator)
-
+separator()
 
 //////////////////////////// PROBLEM 5 ////////////////////////////
 /*
@@ -95,7 +99,7 @@ var carDetails = {
   make: 'toyota',
   model: 'tacoma',
   year: 1994
-}
+};
 // Do not edit the code above.
 
 /*
@@ -121,7 +125,7 @@ function greeting(obj) {
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
-}
+};
 
 // let fullName = {
 //   firstName: "Lindsay",
@@ -174,8 +178,14 @@ function totalPopulation(object){
 function ingredients(obj){
   let {carb, fat, protein} = obj
   return [carb, fat, protein]
-}
+};
 
+// let calories = {
+//   carb: 'four',
+//   fat: 'nine',
+//   protein: 'four'
+// };
+// console.log(ingredients(calories));
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
 // Do not edit the code below.
@@ -197,8 +207,8 @@ var user = {
 
 //Code Here
 
-user.name = 'Bryan G. Smith'
-user.email = 'bryan.smith@devmounta.in'
+user.name = 'Bryan G. Smith';
+user.email = 'bryan.smith@devmounta.in';
 
 
 //////////////////////////// PROBLEM 11 ////////////////////////////
@@ -211,7 +221,7 @@ user.email = 'bryan.smith@devmounta.in'
 delete user.age
 console.log(user)
 
-console.log(separator)
+separator()
 
 
 //////////////////////////// PROBLEM 12 ////////////////////////////
@@ -234,7 +244,7 @@ const catOne = new Cat('Princess', 'Tabby', true)
 
 console.log(catOne.name)
 
-console.log(separator)
+separator()
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
 /*
@@ -259,6 +269,9 @@ class Wizard{
 
 let wizardOne = new Wizard('Hermione', '18', 'Lumos');
 wizardOne.castSpell()
+
+
+separator();
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
     Write a class called Phone. We'll use it as if we were creating
@@ -291,14 +304,14 @@ constructor(brand, model, storage, color, price, sold){
   this.storage = storage;
   this.color = color;
   this.price = price;
-  false = sold;
+  this.sold = false;
 };
 sell(){
-  sold = true;
-  console.log(`${brand} ${model} has been sold.`)
+  this.sold = true;
+  console.log(`${this.brand} ${this.model} has been sold.`)
 };
 changePrice(newPrice){
-  price = newPrice
+  this.price = newPrice
 };
 };
   
@@ -313,6 +326,10 @@ changePrice(newPrice){
 */
 
 //Code Here
+let phone1 = new Phone('Samsung', 'Galaxy S20FE', 128, 'Mint Green', 550);
+let phone2 = new Phone('Google', 'Pixel 4XL', 128, 'Matte Black', 600);
+let phone3 = new Phone('Samsung', 'Galaxy Note10+', 256, 'Prism', 800);
+
 
 /* 
   Call the changePrice function on one of your phones, 
@@ -323,7 +340,10 @@ changePrice(newPrice){
 
 //Code Here 
 
+phone1.changePrice(500);
+console.log(phone1)
 
+separator();
 /*
   Now call the sell method on one of your other phone objects
 
@@ -332,6 +352,10 @@ changePrice(newPrice){
 
 //Code Here 
 
+phone3.sell()
+console.log(phone3.sold)
+
+separator();
 
 //////////////////////////// PROBLEM 15 ////////////////////////////
 
